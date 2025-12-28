@@ -31,7 +31,7 @@ const Sidebar = () => {
 }
 
 return (
-    <div>
+    <div className="card-grid">
         <input value="Vehile Registration Number" type="text" placeholder="Enter number" onChange={(e)}=>e.target.value/>
         <input value="Category" type="text" placeholder='Auto/Car/Truck/Bus' onChange={(e)}=>e.target.value/>
         <input value="Driver Name" type="text" placeholder='Enter Driver Name' onChange={(e)}=>e.target.value/>

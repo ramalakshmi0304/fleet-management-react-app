@@ -12,7 +12,7 @@ const CardList =({cards})=> {
 
 
 
-    <div>{cards}</div>
+    <div className="card-card">{cards}</div>
   )
 }
 
