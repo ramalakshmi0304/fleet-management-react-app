@@ -1,9 +1,18 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 
-const CardList =({card})=> {
+const CardList =({cards})=> {
+
+  const [updateDriver,setUpdateriver]=useState();
+  const [changeAvailability,setChangeAvailability]=useState();
+
+
+
   return (
-    <div>CardList</div>
+
+
+
+    <div>{cards}</div>
   )
 }
 

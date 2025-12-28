@@ -6,7 +6,7 @@ const Sidebar = () => {
     const [nameText, setNametext] = useState();
     const [cards, setCards] = useState();
 
-    card = [{
+    const card = [{
         VehicleRegNo,
         Category,
         DriverName,
@@ -15,18 +15,19 @@ const Sidebar = () => {
     }]
 
     const updateDriver = () => {
-
+        cards.map = ((updatedDriver) => setCards (card.DriverName,
+            { ...card, ...updatedDriver }))
     }
 
-    const changeAvailability = () => {
-
+    const updateAvailability = () => {
+        cards.map = ((changeAvailability) => setCards(card.AvailabilityStatus),
+            { ...card, ...updateAvailability }
+        )
     }
 
     const deleteVehicle = () => {
-
+        cards.filter= setCards(VehicleRegNo===card.VehicleRegNo? !VehicleRegNo: card )
     }
-
-
 }
 
 return (
@@ -37,7 +38,7 @@ return (
         <input value="Availability Status" type="text" onChange={(e)}=>e.target.value/>
         <button onClick={addfleet}> Add Fleet</button>
         {setCard.map = ((card) => (
-            <CardList key='VehicleRegNo' value={card} />
+            <CardList key='VehicleRegNo' value={cards} />
         ))}
     </div>
 )
